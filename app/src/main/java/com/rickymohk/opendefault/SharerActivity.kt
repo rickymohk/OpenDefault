@@ -25,7 +25,12 @@ class SharerActivity : ComponentActivity() {
             }
             else
             {
-                startActivity(Intent(Intent.ACTION_VIEW, uri))
+                try{
+                    startActivity(Intent(Intent.ACTION_VIEW, uri))
+                }
+                catch (ex:Throwable){
+                    Toast.makeText(this, "Error opening URL", Toast.LENGTH_SHORT).show()
+                }
             }
             finish()
             return

@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -61,7 +62,7 @@ class MainActivity : ComponentActivity() {
                             horizontalAlignment = Alignment.CenterHorizontally,
                             verticalArrangement = Arrangement.spacedBy(16.dp),
                         ){
-                            Image(modifier= Modifier.background(colorResource(id = R.color.ic_launcher_background)), painter = appIcon, contentDescription = "App icon")
+                            Image(modifier= Modifier.background(colorResource(id = R.color.ic_launcher_background),shape = CircleShape), painter = appIcon, contentDescription = "App icon")
                             Greeting(modifier = Modifier.padding(16.dp))
                         }
                     }
