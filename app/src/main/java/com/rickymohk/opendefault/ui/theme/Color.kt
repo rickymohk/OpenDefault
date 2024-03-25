@@ -1,4 +1,4 @@
-package com.rickymo.opendefault.ui.theme
+package com.rickymohk.opendefault.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

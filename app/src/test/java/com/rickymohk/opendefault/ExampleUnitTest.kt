@@ -1,4 +1,4 @@
-package com.rickymo.opendefault
+package com.rickymohk.opendefault
 
 import org.junit.Test
 
