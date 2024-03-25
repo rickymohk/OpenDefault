@@ -3,6 +3,8 @@ package com.rickymohk.opendefault
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -25,6 +27,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.rickymohk.opendefault.ui.theme.OpenDefaultTheme
 
 val greet ="""
@@ -34,20 +37,13 @@ val greet ="""
 """.trimIndent()
 
 class MainActivity : ComponentActivity() {
+
+
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        if(intent.action == Intent.ACTION_SEND)
-        {
-            intent.extras
-                ?.getString(Intent.EXTRA_TEXT)
-                ?.let { Uri.parse(it) }
-                ?.let { Intent(Intent.ACTION_VIEW,it) }
-                .also { startActivity(it) }
-            finish()
-            return
-        }
         setContent {
 
                 OpenDefaultTheme {
