@@ -1,4 +1,4 @@
-package com.rickymohk.opendefault
+package io.github.rickymohk.opendefault
 
 import android.content.Intent
 import android.net.Uri
@@ -29,7 +29,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.rickymohk.opendefault.ui.theme.OpenDefaultTheme
+import io.github.rickymohk.opendefault.ui.theme.OpenDefaultTheme
 
 val greet ="""
     Tired of Apps opening links in browser ignoring that you have the dedicated App of the specific website installed?

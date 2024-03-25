@@ -1,4 +1,4 @@
-package com.rickymohk.opendefault
+package github.rickymohk.opendefault
 
 import org.junit.Test
 

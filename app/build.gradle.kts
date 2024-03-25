@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.rickymohk.opendefault"
+    namespace = "io.github.rickymohk.opendefault"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.rickymohk.opendefault"
+        applicationId = "io.github.rickymohk.opendefault"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

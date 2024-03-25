@@ -1,4 +1,4 @@
-package com.rickymohk.opendefault
+package io.github.rickymohk.opendefault
 
 import android.content.Intent
 import android.net.Uri

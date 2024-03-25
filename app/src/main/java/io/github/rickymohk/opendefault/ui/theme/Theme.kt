@@ -1,4 +1,4 @@
-package com.rickymohk.opendefault.ui.theme
+package io.github.rickymohk.opendefault.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
